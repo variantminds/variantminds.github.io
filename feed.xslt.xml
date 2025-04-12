@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsl:stylesheet version="3.0"
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <xsl:output method="html" version="1.0" encoding="UTF-8" indent="yes"/>
+  <xsl:template match="/">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <title>Variant Minds - Site Feed</title>
+      <meta name="color-scheme" content="light dark" />
+      <link href="https://cdn.jsdelivr.net/npm/bulma@1.0.3/css/bulma.min.css" rel="stylesheet" media="all" />
+    </head>
+    <body>
+      <main class="section">
+        <div class="container">
+          <h1 class="title">
+            <a href="/">
+              <span class="icon"><img src="/assets/favicon/favicon.svg"/></span>
+              <xsl:text> </xsl:text>
+              <xsl:value-of select="/atom:feed/atom:title"/>
+            </a>
+            <small> - Feed</small>
+          </h1>
+          <div class="table-container">
+            <table class="table is-striped is-hoverable is-fullwidth">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col" width="50%">Title / Summary / Author</th>
+                <th scope="col">Published / / Categories</th>
+                <th scope="col">Last update</th>
+              </tr>
+            </thead>
+            <tbody>
+              <xsl:apply-templates select="/atom:feed/atom:entry"/>
+            </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="container has-text-centered">  
+          <p><span>&#169;</span> 2025 Variant Minds</p>
+        </div>
+      </footer>
+      <script src="/assets/js/app.js"></script>
+    </body>
+    </html>
+  </xsl:template>
+  <xsl:template match="atom:entry">
+    <tr>
+      <td scope="row" rowspan="3"><xsl:value-of select="position()" /></td>
+      <td><a href="{atom:link/@href}"> <xsl:value-of select="atom:title"/></a></td>
+      <td><xsl:value-of select="atom:published"/></td>  
+      <td><xsl:value-of select="atom:updated"/></td>
+    </tr>
+    <tr>
+      <td colspan="3"><xsl:value-of select="atom:summary"/></td>
+    </tr>
+    <tr>
+      <td>
+        <xsl:for-each select="atom:author">
+          <span class="is-author"><xsl:value-of select="atom:name"/></span>
+          <xsl:if test="position() != last()"><br /></xsl:if>
+        </xsl:for-each>
+      </td>
+      <td colspan="2">
+        <xsl:for-each select="atom:category">
+          <span class="is-category"><xsl:value-of select="@term"/></span>
+          <xsl:if test="position() != last()">,</xsl:if>
+          <xsl:text> </xsl:text>
+        </xsl:for-each>
+      </td>
+    </tr>
+
+  </xsl:template>
+
+</xsl:stylesheet>
