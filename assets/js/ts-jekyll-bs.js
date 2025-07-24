@@ -1,0 +1,5 @@
+"use strict";
+/*!
+ *  ts-jekyll-bs template JS, © 2024 Silvino Rodrigues (@silvinor)
+ *  See: https://github.com/Tecsmith/ts-jekyll-bs
+ */function detectOS(){var t=window.navigator.userAgent,e=window.navigator.platform,n=null;return n=-1!==["Macintosh","MacIntel","MacPPC","Mac68K"].indexOf(e)?"macos":-1!==["iPhone","iPad","iPod"].indexOf(e)?"ios":-1!==["Win32","Win64","Windows","WinCE"].indexOf(e)?"windows":/Android/.test(t)?"android":!n&&/Linux/.test(e)?"linux":"unknown"}document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll("a[href]").forEach(t=>{const e=t.getAttribute("href");e.startsWith("https://variantminds.au/")||!e.startsWith("https://")&&!e.startsWith("http://")||(t.classList.add("external"),t.setAttribute("target","_blank"))}),document.body.classList.add(`os-${detectOS()}`)}),document.querySelectorAll("a.dropdown-toggle[href]").forEach(t=>{const e=t.getAttribute("href");e&&t.addEventListener("dblclick",()=>{window.location.href=e})});
