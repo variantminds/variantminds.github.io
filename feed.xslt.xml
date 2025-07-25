@@ -12,7 +12,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <title>Variant Minds - Site Feed</title>
       <meta name="color-scheme" content="light dark" />
-      <link rel="stylesheet" media="all" href="/assets/css/bootstrap-dark.min.css" integrity="" crossorigin="anonymous" />
+      <link rel="stylesheet" media="all" href="/assets/css/bootlace.min.css" integrity="" crossorigin="anonymous" />
       <style>a,a:hover{text-decoration:none;}.table{margin-top:0.5rem}.table thead td,.table thead th{border-top:none}</style>
     </head>
     <body>

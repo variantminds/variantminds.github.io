@@ -1,1 +1,1 @@
-"use strict";
+"use strict";!function(){const t=document.documentElement,e=window.matchMedia("(prefers-color-scheme: dark)");function a(){if(!t.hasAttribute("data-bs-theme-auto"))return;const a=e.matches;t.setAttribute("data-bs-theme",a?"dark":"light")}"auto"===t.getAttribute("data-bs-theme")&&(t.setAttribute("data-bs-theme-auto","true"),a(),e.addEventListener("change",a))}();
