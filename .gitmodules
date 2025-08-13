@@ -1,0 +1,3 @@
+[submodule "jsclock"]
+	path = clock
+	url = https://github.com/silvinor/jsclock.git
