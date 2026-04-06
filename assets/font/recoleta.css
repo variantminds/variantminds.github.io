@@ -1,0 +1,71 @@
+@font-face {
+  font-weight: 300;
+  font-display: swap;
+  font-family: Recoleta;
+  src: url(./recoleta/300.eot);
+  src:
+    url(./recoleta/300.eot) format("embedded-opentype"),
+    url(./recoleta/300.woff2) format("woff2"),
+    url(./recoleta/300.woff) format("woff"),
+    url(./recoleta/300.ttf) format("truetype");
+}
+
+@font-face {
+  font-weight: 400;
+  font-display: swap;
+  font-family: Recoleta;
+  src: url(./recoleta/400.eot);
+  src:
+    url(./recoleta/400.eot) format("embedded-opentype"),
+    url(./recoleta/400.woff2) format("woff2"),
+    url(./recoleta/400.woff) format("woff"),
+    url(./recoleta/400.ttf) format("truetype");
+}
+
+@font-face {
+  font-weight: 500;
+  font-display: swap;
+  font-family: Recoleta;
+  src: url(./recoleta/500.eot);
+  src:
+    url(./recoleta/500.eot) format("embedded-opentype"),
+    url(./recoleta/500.woff2) format("woff2"),
+    url(./recoleta/500.woff) format("woff"),
+    url(./recoleta/500.ttf) format("truetype");
+}
+
+@font-face {
+  font-weight: 600;
+  font-display: swap;
+  font-family: Recoleta;
+  src: url(./recoleta/600.eot);
+  src:
+    url(./recoleta/600.eot) format("embedded-opentype"),
+    url(./recoleta/600.woff2) format("woff2"),
+    url(./recoleta/600.woff) format("woff"),
+    url(./recoleta/600.ttf) format("truetype");
+}
+
+@font-face {
+  font-weight: 700;
+  font-display: swap;
+  font-family: Recoleta;
+  src: url(./recoleta/700.eot);
+  src:
+    url(./recoleta/700.eot) format("embedded-opentype"),
+    url(./recoleta/700.woff2) format("woff2"),
+    url(./recoleta/700.woff) format("woff"),
+    url(./recoleta/700.ttf) format("truetype");
+}
+
+@font-face {
+  font-weight: 900;
+  font-display: swap;
+  font-family: Recoleta;
+  src: url(./recoleta/900.eot);
+  src:
+    url(./recoleta/900.eot) format("embedded-opentype"),
+    url(./recoleta/900.woff2) format("woff2"),
+    url(./recoleta/900.woff) format("woff"),
+    url(./recoleta/900.ttf) format("truetype");
+}
