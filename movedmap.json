@@ -1,6 +1,13 @@
 [
+  { "from": "https://variantminds.au/books/buy-evm/", "to": "https://variantminds.au/books/evm/buy.html" },
+  { "from": "https://variantminds.au/books/buy-lvm/", "to": "https://variantminds.au/books/lvm/buy.html" },
+  { "from": "https://variantminds.au/books/buy-mvm/", "to": "https://variantminds.au/books/mvm/buy.html" },
+  { "from": "https://variantminds.au/books/buy-yia/", "to": "https://variantminds.au/books/yia/buy.html" },
+  { "from": "https://variantminds.au/books/epub-evm/", "to": "https://variantminds.au/books/evm/digital.html" },
+  { "from": "https://variantminds.au/books/epub-lvm/", "to": "https://variantminds.au/books/lvm/digital.html" },
+  { "from": "https://variantminds.au/books/epub-mvm/", "to": "https://variantminds.au/books/mvm/digital.html" },
   { "from": "https://variantminds.au/insights/adhd/mhr-adhd-chapter-1.html", "to": "https://variantminds.au/insights/mhr_adhd_chapter_1.html" },
-  { "from": "https://variantminds.au/insights/asd,/adhd/lvm-chapter-1.html", "to": "https://variantminds.au/insights/lvm_chapter_1.html" },
+  { "from": "https://variantminds.au/insights/asd/adhd/lvm-chapter-1.html", "to": "https://variantminds.au/insights/lvm_chapter_1.html" },
   { "from": "https://variantminds.au/insights/asd/mhr-asd-chapter-1.html", "to": "https://variantminds.au/insights/mhr_asd_chapter_1.html" },
   { "from": "https://variantminds.au/insights/mhr-asd-postscript.html", "to": "https://variantminds.au/insights/mhr_asd_postscript.html" },
   { "from": "https://variantminds.au/insights/workabilityexpo2025.html", "to": "https://variantminds.au/insights/workability_expo_2025.html" }
