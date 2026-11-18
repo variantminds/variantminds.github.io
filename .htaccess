@@ -2,6 +2,11 @@
 IndexIgnore *
 Options All -Indexes
 
+# do not serve the nginx configuration files
+<FilesMatch "^nginx(-http)?\.conf$">
+  Require all denied
+</FilesMatch>
+
 # show custom error pages for these HTTP statuses
 ErrorDocument 404 /404.html
 
@@ -9,10 +14,6 @@ ErrorDocument 404 /404.html
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
-
-  # "blog" rename to "insights"
-  RewriteRule ^blog/(.*)$ /insights/$1 [R=308,L]
-  RewriteRule ^blog$ /insights [R=308,L]
 
   # static pages
   RewriteRule ^contact/?$ /about/contact.html [R=308,L]
